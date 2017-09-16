@@ -1,0 +1,3 @@
+Run	universe	requirements	rank	should_transfer_files	when_to_transfer_output	executable	arguments	transfer_executable	notification	transfer_input_files	output	error	log	initialdir	nice_user	queue
+1	vanilla	"((ARCH == ""INTEL"") && ((OPSYS == ""WINNT52"") || (OPSYS == ""WINNT61"")) && (Machine =!= LastRemoteHost) && (Memory >= 8000))"	((Memory>=8000) * (100*Mips + 20*KFlops + 4*Memory + 4*VirtualMemory))	Yes	ON_EXIT	Construct.exe	input.xml	true	ERROR	input.xml	demoRun.txt	condorError.txt	condorLog.txt	1	true	1
+2							Construct.xml			Construct.xml				2		1
